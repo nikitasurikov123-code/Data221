@@ -12,9 +12,10 @@ def convert_seconds(seconds):
     if seconds_to_hours < 12:
         time_period = "AM"
     else:
-        time_period = "AM"
+        time_period = "PM"
         #converts the hours into the 12-hour format
     seconds_to_hours = seconds_to_hours % 12
     return str(seconds_to_hours) + " " + str(seconds_to_minutes) + " " + str(seconds_to_seconds) + " " + str(time_period)
 print(convert_seconds(67434))
+
 
